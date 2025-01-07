@@ -57,7 +57,7 @@ export const workItems: WorkItem[] = [
     description: 'Mise en place de l’authentification SAML sur le CMS WordPress',
     image: '/images/stages/logonord.png',
     type: 'internship',
-    videoLink:'/La-ressourcerie.mp4',
+    videoLink:'https://drive.google.com/file/d/1bF-YGNoUwTtgAABqjYvzQMKU70BYPY05/view?usp=drive_link',
     viewLink: './pdf/CD59_RapportStage_ERD_MiseEnPlaceSAML.pdf'
   },
   {
