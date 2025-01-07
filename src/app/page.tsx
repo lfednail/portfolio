@@ -67,7 +67,7 @@ export default function Home() {
                 link: "#"
               }
             ].map((project, index) => (
-              <Card key={index} className="bg-purple-800 border-gray-700">
+              <Card key={index} className="bg-purple-800 ">
                 <CardHeader>
                   <CardTitle className="text-2xl font-bold">{project.title}</CardTitle>
                   <CardDescription className="text-gray-400">{project.description}</CardDescription>

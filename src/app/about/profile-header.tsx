@@ -5,7 +5,7 @@ import React from "react";
 
 export default function ProfileHeader() {
   return (
-    <div className="mb-12">
+    <div className="mb-12 mt-16">
       <div className="flex flex-col md:flex-row items-start justify-between mb-8 gap-6">
         <div className="flex items-start gap-8">
           <div className="relative">
@@ -18,7 +18,7 @@ export default function ProfileHeader() {
             />
           </div>
           <div>
-            <h1 className="text-5xl font-bold mb-2">FEDNAIL - LADOUCEUR LECLERCQ</h1>
+            <h1 className="text-4xl font-bold mb-2">FEDNAIL - LADOUCEUR LECLERCQ</h1>
             <h2 className="text-3xl text-muted-foreground mb-4">Développeur informatique</h2>
             <div className="flex items-center gap-2 text-emerald-500 mb-4">
               <MapPin className="w-4 h-4"/>

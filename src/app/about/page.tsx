@@ -83,22 +83,22 @@ export default function Home() {
                 <ul className="list-none text-gray-300 space-y-2">
                   <li>
                     <Image src="https://images.emojiterra.com/google/noto-emoji/unicode-16.0/color/svg/1f1ed-1f1f9.svg" alt="Haïti"
-                         className="inline h-6 w-6 mr-2"/>
+                         className="inline h-6 w-6 mr-2" width={24} height={24}/>
                     Créole Haïtien (Langue maternelle)
                   </li>
                   <li>
                     <Image src="https://images.emojiterra.com/google/noto-emoji/unicode-16.0/color/svg/1f1eb-1f1f7.svg" alt="France"
-                         className="inline h-6 w-6 mr-2"/>
+                         className="inline h-6 w-6 mr-2" width={24} height={24}/>
                     Français
                   </li>
                   <li>
                     <Image src="https://images.emojiterra.com/google/noto-emoji/unicode-16.0/color/svg/1f1fa-1f1f8.svg"
-                         alt="États-Unis" className="inline h-6 w-6 mr-2"/>
+                         alt="États-Unis" className="inline h-6 w-6 mr-2" width={24} height={24}/>
                     Anglais
                   </li>
                   <li>
                     <Image src="https://images.emojiterra.com/google/noto-emoji/unicode-16.0/color/svg/1f1e9-1f1ea.svg" alt="Allemagne"
-                         className="inline h-6 w-6 mr-2"/>
+                         className="inline h-6 w-6 mr-2" width={24} height={24}/>
                     Allemand
                   </li>
                 </ul>
