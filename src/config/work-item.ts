@@ -39,7 +39,7 @@ export const workItems: WorkItem[] = [
       description: 'Designed and developed a personal portfolio website using Next.js',
       image: '/images/Personal-Portfolio-Website.png',
       type: 'personnal-project',
-      demoLink: '',
+      demoLink: 'https://fednail-leclerc.vercel.app/',
       githubLink: 'https://github.com/lfednail/site_fednail.git'
   },
   {
