@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Skills() {
   return (
     <>
@@ -27,7 +29,7 @@ export default function Skills() {
                 key={skill.name}
                 className="bg-gray-50 rounded-lg p-4 flex items-center justify-center"
               >
-                <img
+                <Image
                   src={skill.logo}
                   alt={skill.name}
                   className="h-12 w-12"

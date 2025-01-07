@@ -4,6 +4,7 @@ import {useEffect, useState} from "react";
 
 export function Timer() {
   const [currentTime, setCurrentTime] = useState<string>("");
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [location, setLocation] = useState<string>("Loading...");
 
   // Update the time every second

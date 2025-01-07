@@ -1,10 +1,10 @@
 import ProfileHeader from './profile-header';
 import Link from 'next/link';
 import {Button} from '@/components/ui/button';
-import {ArrowRight, Github, Linkedin, Mail} from 'lucide-react';
+import {ArrowRight, Mail} from 'lucide-react';
 import React from "react";
-
-
+import Image from "next/image";
+import {GitHubLogoIcon, LinkedInLogoIcon} from "@radix-ui/react-icons";
 
 export default function Home() {
   return (
@@ -12,7 +12,6 @@ export default function Home() {
       <div className="container max-w-7xl mx-auto text-muted-foreground">
         <div className="space-y-16">
           <ProfileHeader/>
-
           <section>
             <h2 className="text-4xl font-bold mb-8">Work Experience</h2>
             <div className="grid gap-8 md:grid-cols-2">
@@ -43,7 +42,6 @@ export default function Home() {
               </Link>
             </Button>
           </section>
-
           <section>
             <h2 className="text-4xl font-bold mb-8">Studies</h2>
             <div className="bg-gray-900 p-6 rounded-lg">
@@ -68,7 +66,6 @@ export default function Home() {
               </Link>
             </Button>
           </section>
-
           <section>
             <h2 className="text-4xl font-bold mb-8">Technical Skills</h2>
             <div className="grid gap-8 md:grid-cols-2">
@@ -85,22 +82,22 @@ export default function Home() {
                 <h3 className="text-2xl font-semibold mb-4">Languages</h3>
                 <ul className="list-none text-gray-300 space-y-2">
                   <li>
-                    <img src="https://images.emojiterra.com/google/noto-emoji/unicode-16.0/color/svg/1f1ed-1f1f9.svg" alt="Haïti"
+                    <Image src="https://images.emojiterra.com/google/noto-emoji/unicode-16.0/color/svg/1f1ed-1f1f9.svg" alt="Haïti"
                          className="inline h-6 w-6 mr-2"/>
                     Créole Haïtien (Langue maternelle)
                   </li>
                   <li>
-                    <img src="https://images.emojiterra.com/google/noto-emoji/unicode-16.0/color/svg/1f1eb-1f1f7.svg" alt="France"
+                    <Image src="https://images.emojiterra.com/google/noto-emoji/unicode-16.0/color/svg/1f1eb-1f1f7.svg" alt="France"
                          className="inline h-6 w-6 mr-2"/>
                     Français
                   </li>
                   <li>
-                    <img src="https://images.emojiterra.com/google/noto-emoji/unicode-16.0/color/svg/1f1fa-1f1f8.svg"
+                    <Image src="https://images.emojiterra.com/google/noto-emoji/unicode-16.0/color/svg/1f1fa-1f1f8.svg"
                          alt="États-Unis" className="inline h-6 w-6 mr-2"/>
                     Anglais
                   </li>
                   <li>
-                    <img src="https://images.emojiterra.com/google/noto-emoji/unicode-16.0/color/svg/1f1e9-1f1ea.svg" alt="Allemagne"
+                    <Image src="https://images.emojiterra.com/google/noto-emoji/unicode-16.0/color/svg/1f1e9-1f1ea.svg" alt="Allemagne"
                          className="inline h-6 w-6 mr-2"/>
                     Allemand
                   </li>
@@ -114,26 +111,23 @@ export default function Home() {
               </Link>
             </Button>
           </section>
-
-
         </div>
         <div className="flex items-center justify-center gap-2  ">
           <Button asChild className="mt-6 text-center items-center justify-center bg-gray-900 text-gray-300 gap-2">
             <Link href="/work"> 👉 View My Work</Link>
           </Button>
         </div>
-
         <section className="p-7">
           <h2 className="text-2xl font-bold mb-4">Connect With Me</h2>
           <div className="flex gap-4 justify-center">
             <Button variant="outline" size="sm" asChild>
               <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-                <Github className="w-4 h-4 mr-2"/> GitHub
+                <GitHubLogoIcon className="w-4 h-4 mr-2"/> GitHub
               </a>
             </Button>
             <Button variant="outline" size="sm" asChild>
               <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-                <Linkedin className="w-4 h-4 mr-2"/> LinkedIn
+                <LinkedInLogoIcon className="w-4 h-4 mr-2"/> LinkedIn
               </a>
             </Button>
             <Button variant="outline" size="sm" asChild>
@@ -143,9 +137,7 @@ export default function Home() {
             </Button>
           </div>
         </section>
-
       </div>
-
     </>
   )
 }

@@ -3,6 +3,7 @@
 import {Card, CardContent} from "@/components/ui/card";
 import {Award, BookOpen, Building2, Clock} from "lucide-react";
 import { Briefcase, GraduationCap } from "lucide-react";
+import Image from "next/image";
 
 const details = [
   {
@@ -42,7 +43,7 @@ export default function EducationPage() {
               compétences du BTS SIO
             </p>
           </div>
-          <img
+          <Image
             alt="Image illustrative d'un environnement éducatif avec des étudiants travaillant sur des ordinateurs"
             className="absolute inset-0 w-full h-full object-cover opacity-50"
             height={600}
@@ -58,7 +59,7 @@ export default function EducationPage() {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="bg-white p-6 rounded-lg shadow-lg text-black dark:bg-gray-800 dark:text-gray-200">
-                <img
+                <Image
                   alt="Image illustrative de la spécialité SLAM avec des étudiants codant sur des ordinateurs"
                   className="w-full h-48 object-cover rounded-t-lg mb-4"
                   height={300}
@@ -74,7 +75,7 @@ export default function EducationPage() {
                 </p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-lg text-black dark:bg-gray-800 dark:text-gray-200">
-                <img
+                <Image
                   alt="Image illustrative de la spécialité SISR avec des étudiants travaillant sur des réseaux informatiques"
                   className="w-full h-48 object-cover rounded-t-lg mb-4"
                   height={300}
