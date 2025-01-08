@@ -32,7 +32,7 @@ export default function ProfileHeader() {
                 </a>
               </Button>
               <Button variant="outline" size="sm" asChild>
-                <a href="hhttps://www.linkedin.com/in/fednail-leclercq-734333250/" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/fednail-leclercq-734333250/" target="_blank" rel="noopener noreferrer">
                   <Linkedin className="w-4 h-4 mr-2"/> LinkedIn
                 </a>
               </Button>
