@@ -27,12 +27,12 @@ export default function ProfileHeader() {
 
             <div className="flex flex-wrap gap-2">
               <Button variant="outline" size="sm" asChild>
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/lfednail" target="_blank" rel="noopener noreferrer">
                   <Github className="w-4 h-4 mr-2"/> GitHub
                 </a>
               </Button>
               <Button variant="outline" size="sm" asChild>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                <a href="hhttps://www.linkedin.com/in/fednail-leclercq-734333250/" target="_blank" rel="noopener noreferrer">
                   <Linkedin className="w-4 h-4 mr-2"/> LinkedIn
                 </a>
               </Button>

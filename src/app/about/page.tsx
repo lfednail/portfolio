@@ -121,12 +121,12 @@ export default function Home() {
           <h2 className="text-2xl font-bold mb-4">Connect With Me</h2>
           <div className="flex gap-4 justify-center">
             <Button variant="outline" size="sm" asChild>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/lfednail" target="_blank" rel="noopener noreferrer">
                 <GitHubLogoIcon className="w-4 h-4 mr-2"/> GitHub
               </a>
             </Button>
             <Button variant="outline" size="sm" asChild>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/fednail-leclercq-734333250/" target="_blank" rel="noopener noreferrer">
                 <LinkedInLogoIcon className="w-4 h-4 mr-2"/> LinkedIn
               </a>
             </Button>

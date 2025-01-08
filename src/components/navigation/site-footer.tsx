@@ -11,7 +11,7 @@ const Socials = [
   },
   {
     name: "GitHub",
-    href: "https://github.com/lfednail?tab=repositories",
+    href: "https://github.com/lfednail",
   },
     {
       name: "Twitter",
@@ -19,7 +19,7 @@ const Socials = [
     },
     {
       name: "Instagram",
-      href: "https://www.instagram.com/fedna/",
+      href: "https://www.instagram.com/sukig.dev/",
     },
 ];
 
