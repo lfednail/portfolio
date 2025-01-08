@@ -28,7 +28,7 @@ export const workItems: WorkItem[] = [
     id: '2',
     title: 'Veille Technologique Ordinateur Quantique',
     description: 'Veille technologique sur L\'ordinateur quantique et l\'internet quantique',
-    image: '/images/Veille-techno.png',
+    image: '/images/veille-techno.png',
     type: 'veille-technologique',
     viewLink: '/images/Veille-techno.pdf',
 

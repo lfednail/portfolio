@@ -57,7 +57,7 @@ export default function Home() {
               {
                 title: "Project Nebula",
                 description: "A cutting-edge web application showcasing advanced React patterns and state management techniques.",
-                image: "/images/project-nebula.jpeg",
+                image: "/images/project-Nebula.jpeg",
                 link: "#"
               },
               {
