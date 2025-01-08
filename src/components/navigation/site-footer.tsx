@@ -13,14 +13,10 @@ const Socials = [
     name: "GitHub",
     href: "https://github.com/lfednail",
   },
-    {
-      name: "Twitter",
-      href: "https://twitter.com/fedna",
-    },
-    {
-      name: "Instagram",
-      href: "https://www.instagram.com/sukig.dev/",
-    },
+  {
+    name: "Instagram",
+    href: "https://www.instagram.com/sukig.dev/",
+  },
 ];
 
 export default function SiteFooter() {
