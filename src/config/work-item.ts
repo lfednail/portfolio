@@ -62,7 +62,7 @@ export const workItems: WorkItem[] = [
   },
   {
     id:'6',
-    title: 'installation de GLPI',
+    title: 'Mise en place d\'un support ou assistance aux utilisateurs (GLPI)',
     description: 'Installation de GLPI sur un serveur debian 12',
     image: '/glpi.png',
     type: 'school_project',
