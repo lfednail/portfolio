@@ -77,5 +77,13 @@ export const workItems: WorkItem[] = [
     type:"internship",
     viewLink:'/Presentation_de_stage.pdf',
   },
+  {
+    id:'8',
+    title: 'TOEIC',
+    description: 'Certification TOEIC',
+    image:'/images/toeic.jpg',
+    type:'certification',
+    viewLink:'',
+  }
 // Add more items as needed
 ];
