@@ -89,9 +89,9 @@ export const workItems: WorkItem[] = [
     id:'9',
     title: 'Certification de formation',
     description: ' Un PDF ma Certification de formation',
-    image:'/images/formation.jpg',
+    image:'',
     type:'certification',
-    viewLink:'/pdf/certification-formation.pdf',
+    viewLink:'',
   }
 // Add more items as needed
 ];
