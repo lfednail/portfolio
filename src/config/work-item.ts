@@ -84,6 +84,14 @@ export const workItems: WorkItem[] = [
     image:'/images/toeic.jpg',
     type:'certification',
     viewLink:'',
+  },
+  {
+    id:'9',
+    title: 'Certification de formation',
+    description: ' Un PDF ma Certification de formation',
+    image:'/images/formation.jpg',
+    type:'certification',
+    viewLink:'/pdf/certification-formation.pdf',
   }
 // Add more items as needed
 ];
