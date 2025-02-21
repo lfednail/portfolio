@@ -92,6 +92,15 @@ export const workItems: WorkItem[] = [
     image:'',
     type:'certification',
     viewLink:'',
+  },
+  {
+    id:'10',
+    title: 'Nightclub Echafée',
+    description: 'Bienvenue à L\'Echafee, où la musique rencontre le luxe. Découvrez l\'expérience ultime de la vie nocturne. Notre établissement est conçu pour offrir une expérience immersive et inoubliable aux amateurs de musique et de nightlife.',
+    image:'/images/logo-echafee.png',
+    type:'personnal-project',
+    demoLink:'https://echafee.vercel.app/',
+    githubLink:'https://github.com/lfednail/nightfall.git',
   }
 // Add more items as needed
 ];
