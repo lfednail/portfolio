@@ -13,10 +13,7 @@ export default function Skills() {
               {name: 'CSS', logo: 'https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg'},
               {name: 'JavaScript', logo: 'https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png'},
               {name: 'React', logo: 'https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg'},
-              {
-                name: 'TypeScript',
-                logo: 'https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg'
-              },
+              {name: 'TypeScript',logo: 'https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg'},
               {name: 'Node.js', logo: 'https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg'},
               {name: 'Next.js', logo: 'https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg'},
               {name: 'TailwindCSS', logo: 'https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg'},
@@ -32,12 +29,15 @@ export default function Skills() {
                 <Image
                   src={skill.logo}
                   alt={skill.name}
+                  width={48}
+                  height={48}
                   className="h-12 w-12"
                   title={skill.name}
                 />
               </div>
             ))}
           </div>
+
         </section>
 
 
