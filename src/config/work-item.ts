@@ -101,7 +101,7 @@ export const workItems: WorkItem[] = [
     description: 'Lors de mon stage à la Mairie de Denain, j\'ai contribué à l\'optimisation des services informatiques et à la gestion des infrastructures. J\'ai administré l\'intranet municipal (WordPress), assuré le support technique (matériel, logiciel, réseau, téléphonie), et géré les sauvegardes avec VEEAM.',
     image: '/images/MairieDenain.png',
     type: 'internship',
-    viewLink: '/Rapport_De_Stage_Mairie_Denain.pdf'
+    viewLink: '/pdf/Rapport_stage_Denain.pdf',
   }
 // Add more items as needed
 ];
