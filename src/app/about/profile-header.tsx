@@ -1,6 +1,6 @@
-import { Download, Github, Linkedin, Mail, MapPin } from 'lucide-react'
-import { Button } from '@/components/ui/button'
-import Image from 'next/image'
+import { Download, Github, Linkedin, Mail, MapPin } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import Image from "next/image";
 import React from "react";
 
 export default function ProfileHeader() {
@@ -18,51 +18,62 @@ export default function ProfileHeader() {
             />
           </div>
           <div>
-            <h1 className="text-4xl font-bold mb-2">FEDNAIL - LADOUCEUR LECLERCQ</h1>
-            <h2 className="text-3xl text-muted-foreground mb-4">Développeur informatique</h2>
+            <h1 className="text-4xl font-bold mb-2">
+              FEDNAIL - LADOUCEUR LECLERCQ
+            </h1>
+            <h2 className="text-3xl text-muted-foreground mb-4">
+              Développeur informatique
+            </h2>
             <div className="flex items-center gap-2 text-emerald-500 mb-4">
-              <MapPin className="w-4 h-4"/>
+              <MapPin className="w-4 h-4" />
               <span>Denain / France</span>
             </div>
 
             <div className="flex flex-wrap gap-2">
               <Button variant="outline" size="sm" asChild>
-                <a href="https://github.com/lfednail" target="_blank" rel="noopener noreferrer">
-                  <Github className="w-4 h-4 mr-2"/> GitHub
+                <a
+                  href="https://github.com/lfednail"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Github className="w-4 h-4 mr-2" /> GitHub
                 </a>
               </Button>
               <Button variant="outline" size="sm" asChild>
-                <a href="https://www.linkedin.com/in/fednail-leclercq-734333250/" target="_blank" rel="noopener noreferrer">
-                  <Linkedin className="w-4 h-4 mr-2"/> LinkedIn
+                <a
+                  href="https://www.linkedin.com/in/fednail-leclercq-734333250/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Linkedin className="w-4 h-4 mr-2" /> LinkedIn
                 </a>
               </Button>
               <Button variant="outline" size="sm" asChild>
                 <a href="mailto:lfednail@gmail.com">
-                  <Mail className="w-4 h-4 mr-2"/> Mail
+                  <Mail className="w-4 h-4 mr-2" /> Mail
                 </a>
               </Button>
             </div>
-
           </div>
         </div>
         <div className="flex gap-4">
           <a
-            href="/pdf/CV_FEDNAIL.pdf"
-            download="CV_FEDNAIL.pdf"
+            href="/pdf/CV_fednail_leclercq.pdf"
+            download="CV_fednail_leclercq.pdf"
             className="inline-flex items-center gap-2  px-2 text-emerald-500 border border-emerald-500/20 rounded-md hover:bg-emerald-500/10"
           >
-            <Download className="w-4 h-4"/>
+            <Download className="w-4 h-4" />
             <span>Download CV</span>
           </a>
         </div>
-
       </div>
       <p className="text-lg text-muted-foreground max-w-3xl">
-        Étudiant en <span className="text-emerald-500"> BTS SIO</span>, j&#39;aspire à devenir développeur informatique. Je suis passionné par les
-        nouvelles technologies et l&apos;informatique. De nature débrouillarde et autonome, j&apos;aime
-        apprendre de nouvelles choses et technologies.
+        Étudiant en <span className="text-emerald-500"> BTS SIO</span>,
+        j&#39;aspire à devenir développeur informatique. Je suis passionné par
+        les nouvelles technologies et l&apos;informatique. De nature
+        débrouillarde et autonome, j&apos;aime apprendre de nouvelles choses et
+        technologies.
       </p>
     </div>
-  )
+  );
 }
-

@@ -48,7 +48,7 @@ export default function Home() {
                 </p>
                 <ul className="list-none text-muted-foreground">
                   <li>
-                    Intégration de l’authentification SAML sur WordPress -
+                    Intégration de l&#39;authentification SAML sur WordPress -
                     Sécurisation des accès utilisateurs
                   </li>
                 </ul>
