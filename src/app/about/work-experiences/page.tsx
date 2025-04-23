@@ -33,9 +33,9 @@ export default function WorkExperience() {
             <li>Mise en place des stands et promotions</li>
           </ul>
         </div>
-
-        <h1 className="text-4xl font-bold mb-12">Work Experience</h1>
-
+      </div>
+      <h1 className="text-4xl font-bold mb-12">Work Experience</h1>
+      <div>
         <div>
           <div className="flex justify-between items-baseline mb-1">
             <h2 className="text-2xl font-semibold">Mairie de Denain</h2>

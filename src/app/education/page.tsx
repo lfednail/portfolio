@@ -1,7 +1,7 @@
 "use client";
 
-import {Card, CardContent} from "@/components/ui/card";
-import {Award, BookOpen, Building2, Clock} from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Award, BookOpen, Building2, Clock } from "lucide-react";
 import { Briefcase, GraduationCap } from "lucide-react";
 import Image from "next/image";
 
@@ -28,12 +28,10 @@ const details = [
   },
 ];
 
-
 export default function EducationPage() {
   return (
     <>
-      <div className="min-h-screen bg-black text-white p-8">
-
+      <div className="ontainer max-w-7xl mx-auto text-muted-foreground">
         {/* Hero Banner */}
         <section className="relative py-20">
           <div className="container mx-auto px-6 text-center">
@@ -66,12 +64,12 @@ export default function EducationPage() {
                   src="https://storage.googleapis.com/a1aa/image/ashyUvV9yRLcL1eMKzWxAal0nnCgyTCq658JrQQ51RL0u6fTA.jpg"
                   width={400}
                 />
-                <h3 className="text-2xl font-bold mb-2 text-purple-700 dark:text-purple-400">
+                <h3 className="text-2xl font-bold mb-2 text-emerald-700 dark:text-emerald-500">
                   SLAM (Solutions Logicielles et Applications Métiers)
                 </h3>
                 <p>
-                  La spécialité SLAM forme des développeurs capables de concevoir,
-                  réaliser et maintenir des solutions logicielles.
+                  La spécialité SLAM forme des développeurs capables de
+                  concevoir, réaliser et maintenir des solutions logicielles.
                 </p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-lg text-black dark:bg-gray-800 dark:text-gray-200">
@@ -82,7 +80,7 @@ export default function EducationPage() {
                   src="https://storage.googleapis.com/a1aa/image/LwgEvr7RrWaxA9a3T9Enx6hUF44fLyxZkza7rfXZO6Fmd1fnA.jpg"
                   width={400}
                 />
-                <h3 className="text-2xl font-bold mb-2 text-purple-700 dark:text-purple-400">
+                <h3 className="text-2xl font-bold mb-2 text-emerald-700 dark:text-emerald-500">
                   SISR (Solutions d&apos;Infrastructure, Systèmes et Réseaux)
                 </h3>
                 <p>
@@ -102,10 +100,13 @@ export default function EducationPage() {
             </h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {details.map((detail, index) => (
-                <Card key={index} className="p-6 text-center hover:shadow-lg transition-shadow">
-                  <detail.icon className="w-10 h-10 text-primary mx-auto mb-4"/>
+                <Card
+                  key={index}
+                  className="p-6 text-center hover:shadow-lg transition-shadow"
+                >
+                  <detail.icon className="w-10 h-10 text-primary mx-auto mb-4" />
                   <h3 className="text-xl font-semibold mb-2">{detail.title}</h3>
-                  <p className="text-muted-foreground">{detail.description}</p>
+                  <p className="text-emerald-700">{detail.description}</p>
                 </Card>
               ))}
             </div>
@@ -119,8 +120,10 @@ export default function EducationPage() {
             </h2>
             <div className="grid md:grid-cols-2 gap-8">
               <Card className="p-8">
-                <Briefcase className="w-12 h-12 text-primary mb-6"/>
-                <h3 className="text-2xl font-semibold mb-4">Débouchés professionnels</h3>
+                <Briefcase className="w-12 h-12 text-primary mb-6" />
+                <h3 className="text-2xl font-semibold mb-4">
+                  Débouchés professionnels
+                </h3>
                 <ul className="space-y-3 text-muted-foreground">
                   <li>• Développeur d&apos;applications</li>
                   <li>• Administrateur systèmes et réseaux</li>
@@ -130,8 +133,10 @@ export default function EducationPage() {
                 </ul>
               </Card>
               <Card className="p-8">
-                <GraduationCap className="w-12 h-12 text-primary mb-6"/>
-                <h3 className="text-2xl font-semibold mb-4">Poursuite d&apos;études</h3>
+                <GraduationCap className="w-12 h-12 text-primary mb-6" />
+                <h3 className="text-2xl font-semibold mb-4">
+                  Poursuite d&apos;études
+                </h3>
                 <ul className="space-y-3 text-muted-foreground">
                   <li>• Licence professionnelle</li>
                   <li>• Bachelor informatique</li>
@@ -146,21 +151,24 @@ export default function EducationPage() {
 
         {/* Épreuves Section */}
         <section className="mb-12 p-7 ">
-          <h2 className="text-2xl font-semibold text-center mb-8">Les épreuves du BTS SIO</h2>
+          <h2 className="text-2xl font-semibold text-center mb-8">
+            Les épreuves du BTS SIO
+          </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 ">
             {/* Épreuve E4 */}
             <Card className="bg-muted border-zinc-800">
               <CardContent className="p-6">
                 <div className="flex items-center gap-2 text-emerald-500 mb-4">
-                  <Clock className="w-4 h-4"/>
+                  <Clock className="w-4 h-4" />
                   <span className="text-sm">40min</span>
                 </div>
                 <h3 className="text-xl font-bold mb-4">Épreuve E4</h3>
                 <p className="text-gray-500 text-sm">
-                  L&apos;épreuve se divise en deux temps : une présentation de 10 minutes du parcours
-                  de professionnalisation, suivie de 30 minutes d&apos;échange avec le jury pour apprécier
-                  les réalisations du dossier. Cet entretien évalue les compétences du candidat et sa
-                  contribution en équipe.
+                  L&apos;épreuve se divise en deux temps : une présentation de
+                  10 minutes du parcours de professionnalisation, suivie de 30
+                  minutes d&apos;échange avec le jury pour apprécier les
+                  réalisations du dossier. Cet entretien évalue les compétences
+                  du candidat et sa contribution en équipe.
                 </p>
               </CardContent>
             </Card>
@@ -169,15 +177,16 @@ export default function EducationPage() {
             <Card className="bg-muted border-zinc-800">
               <CardContent className="p-6">
                 <div className="flex items-center gap-2 text-emerald-500 mb-4">
-                  <Clock className="w-4 h-4"/>
+                  <Clock className="w-4 h-4" />
                   <span className="text-sm">2h10min</span>
                 </div>
                 <h3 className=" text-xl font-bold mb-4">Épreuve E5</h3>
                 <p className="text-gray-500 text-sm">
-                  L&apos;évaluation dure 40 minutes (+1h30 de préparation) et comporte deux phases :
-                  d&apos;abord, 30 minutes de préparation suivies d&apos;un exposé de 20 minutes sur une expression
-                  de besoins, puis une heure de préparation pour réaliser une solution,
-                  validée par un entretien explicatif.
+                  L&apos;évaluation dure 40 minutes (+1h30 de préparation) et
+                  comporte deux phases : d&apos;abord, 30 minutes de préparation
+                  suivies d&apos;un exposé de 20 minutes sur une expression de
+                  besoins, puis une heure de préparation pour réaliser une
+                  solution, validée par un entretien explicatif.
                 </p>
               </CardContent>
             </Card>
@@ -186,15 +195,16 @@ export default function EducationPage() {
             <Card className="bg-muted border-zinc-800">
               <CardContent className="p-6">
                 <div className="flex items-center gap-2 text-emerald-500 mb-4">
-                  <Clock className="w-4 h-4"/>
+                  <Clock className="w-4 h-4" />
                   <span className="text-sm">20min</span>
                 </div>
                 <h3 className=" text-xl font-bold mb-4">Certification SIO</h3>
                 <p className="text-gray-500 text-sm">
-                  L&apos;épreuve de Certification SIO consiste en un oral de 20 minutes, sans préparation,
-                  où le candidat expose la démarche suivie pour acquérir une certification ou approfondies,
-                  dans le but de renforcer son parcours professionnel et favoriser son insertion
-                  ou évolution de carrière.
+                  L&apos;épreuve de Certification SIO consiste en un oral de 20
+                  minutes, sans préparation, où le candidat expose la démarche
+                  suivie pour acquérir une certification ou approfondies, dans
+                  le but de renforcer son parcours professionnel et favoriser
+                  son insertion ou évolution de carrière.
                 </p>
               </CardContent>
             </Card>
@@ -204,108 +214,112 @@ export default function EducationPage() {
         {/* Tableau de Synthèse */}
         <section className="py-12">
           <div className="container mx-auto px-6">
-            <h2 className="text-2xl font-semibold text-center mb-8">Le Tableau de Synthèse</h2>
+            <h2 className="text-2xl font-semibold text-center mb-8">
+              Le Tableau de Synthèse
+            </h2>
             <div className="overflow-x-auto">
-              <table
-                className="min-w-full bg-white rounded-lg shadow-lg text-black dark:bg-gray-800 dark:text-gray-200">
-                <thead className="bg-purple-700 text-white dark:bg-purple-900">
-                <tr>
-                  <th className="py-2 px-4 border-b">Compétence</th>
-                  <th className="py-3 px-4 border-b">Description</th>
-                  <th className="py-2 px-4 border-b">SLAM</th>
-                  <th className="py-2 px-4 border-b">SISR</th>
-                </tr>
+              <table className="min-w-full bg-white rounded-lg shadow-lg text-black dark:bg-gray-800 dark:text-gray-200">
+                <thead className="bg-emerald-500 text-white dark:bg-emerald-700">
+                  <tr>
+                    <th className="py-2 px-4 border-b">Compétence</th>
+                    <th className="py-3 px-4 border-b">Description</th>
+                    <th className="py-2 px-4 border-b">SLAM</th>
+                    <th className="py-2 px-4 border-b">SISR</th>
+                  </tr>
                 </thead>
                 <tbody>
-                <tr>
-                  <td className="py-2 px-4 border-b">
-                    Développement d&#39;applications :
-                  </td>
-                  <td className="py-2 px-4 border-b">
-                    Conception, réalisation et maintenance d&apos;applications
-                    logicielles.
-                  </td>
-                  <td className="py-2 px-4 border-b text-center">✔️</td>
-                  <td className="py-2 px-4 border-b text-center">❌</td>
-                </tr>
-                <tr>
-                  <td className="py-2 px-4 border-b">
-                    Gestion de bases de données :
-                  </td>
-                  <td className="py-2 px-4 border-b">
-                    Conception, gestion et optimisation des bases de données.
-                  </td>
-                  <td className="py-2 px-4 border-b text-center">✔️</td>
-                  <td className="py-2 px-4 border-b text-center">❌</td>
-                </tr>
-                <tr>
-                  <td className="py-2 px-4 border-b">
-                    Conception et maintenance de logiciels :
-                  </td>
-                  <td className="py-2 px-4 border-b">
-                    Développement et maintenance de logiciels adaptés aux besoins
-                    des utilisateurs.
-                  </td>
-                  <td className="py-2 px-4 border-b text-center">✔️</td>
-                  <td className="py-2 px-4 border-b text-center">❌</td>
-                </tr>
-                <tr>
-                  <td className="py-2 px-4 border-b">
-                    Analyse des besoins des utilisateurs :
-                  </td>
-                  <td className="py-2 px-4 border-b">
-                    Identification et analyse des besoins des utilisateurs pour
-                    proposer des solutions adaptées.
-                  </td>
-                  <td className="py-2 px-4 border-b text-center">✔️</td>
-                  <td className="py-2 px-4 border-b text-center">❌</td>
-                </tr>
-                <tr>
-                  <td className="py-2 px-4 border-b">Administration des réseaux :</td>
-                  <td className="py-2 px-4 border-b">
-                    Gestion et maintenance des réseaux informatiques.
-                  </td>
-                  <td className="py-2 px-4 border-b text-center">❌</td>
-                  <td className="py-2 px-4 border-b text-center">✔️</td>
-                </tr>
-                <tr>
-                  <td className="py-2 px-4 border-b">
-                    Gestion des systèmes d&apos;exploitation :
-                  </td>
-                  <td className="py-2 px-4 border-b">
-                    Installation, configuration et maintenance des systèmes
-                    d&apos;exploitation.
-                  </td>
-                  <td className="py-2 px-4 border-b text-center">❌</td>
-                  <td className="py-2 px-4 border-b text-center">✔️</td>
-                </tr>
-                <tr>
-                  <td className="py-2 px-4 border-b">Sécurité informatique :</td>
-                  <td className="py-2 px-4 border-b">
-                    Mise en place et gestion des mesures de sécurité pour protéger
-                    les systèmes informatiques.
-                  </td>
-                  <td className="py-2 px-4 border-b text-center">❌</td>
-                  <td className="py-2 px-4 border-b text-center">✔️</td>
-                </tr>
-                <tr>
-                  <td className="py-2 px-4 border-b">
-                    Support et maintenance des infrastructures :
-                  </td>
-                  <td className="py-2 px-4 border-b">
-                    Assistance technique et maintenance des infrastructures
-                    informatiques.
-                  </td>
-                  <td className="py-2 px-4 border-b text-center">❌</td>
-                  <td className="py-2 px-4 border-b text-center">✔️</td>
-                </tr>
+                  <tr>
+                    <td className="py-2 px-4 border-b">
+                      Développement d&#39;applications :
+                    </td>
+                    <td className="py-2 px-4 border-b">
+                      Conception, réalisation et maintenance d&apos;applications
+                      logicielles.
+                    </td>
+                    <td className="py-2 px-4 border-b text-center">✔️</td>
+                    <td className="py-2 px-4 border-b text-center">❌</td>
+                  </tr>
+                  <tr>
+                    <td className="py-2 px-4 border-b">
+                      Gestion de bases de données :
+                    </td>
+                    <td className="py-2 px-4 border-b">
+                      Conception, gestion et optimisation des bases de données.
+                    </td>
+                    <td className="py-2 px-4 border-b text-center">✔️</td>
+                    <td className="py-2 px-4 border-b text-center">❌</td>
+                  </tr>
+                  <tr>
+                    <td className="py-2 px-4 border-b">
+                      Conception et maintenance de logiciels :
+                    </td>
+                    <td className="py-2 px-4 border-b">
+                      Développement et maintenance de logiciels adaptés aux
+                      besoins des utilisateurs.
+                    </td>
+                    <td className="py-2 px-4 border-b text-center">✔️</td>
+                    <td className="py-2 px-4 border-b text-center">❌</td>
+                  </tr>
+                  <tr>
+                    <td className="py-2 px-4 border-b">
+                      Analyse des besoins des utilisateurs :
+                    </td>
+                    <td className="py-2 px-4 border-b">
+                      Identification et analyse des besoins des utilisateurs
+                      pour proposer des solutions adaptées.
+                    </td>
+                    <td className="py-2 px-4 border-b text-center">✔️</td>
+                    <td className="py-2 px-4 border-b text-center">❌</td>
+                  </tr>
+                  <tr>
+                    <td className="py-2 px-4 border-b">
+                      Administration des réseaux :
+                    </td>
+                    <td className="py-2 px-4 border-b">
+                      Gestion et maintenance des réseaux informatiques.
+                    </td>
+                    <td className="py-2 px-4 border-b text-center">❌</td>
+                    <td className="py-2 px-4 border-b text-center">✔️</td>
+                  </tr>
+                  <tr>
+                    <td className="py-2 px-4 border-b">
+                      Gestion des systèmes d&apos;exploitation :
+                    </td>
+                    <td className="py-2 px-4 border-b">
+                      Installation, configuration et maintenance des systèmes
+                      d&apos;exploitation.
+                    </td>
+                    <td className="py-2 px-4 border-b text-center">❌</td>
+                    <td className="py-2 px-4 border-b text-center">✔️</td>
+                  </tr>
+                  <tr>
+                    <td className="py-2 px-4 border-b">
+                      Sécurité informatique :
+                    </td>
+                    <td className="py-2 px-4 border-b">
+                      Mise en place et gestion des mesures de sécurité pour
+                      protéger les systèmes informatiques.
+                    </td>
+                    <td className="py-2 px-4 border-b text-center">❌</td>
+                    <td className="py-2 px-4 border-b text-center">✔️</td>
+                  </tr>
+                  <tr>
+                    <td className="py-2 px-4 border-b">
+                      Support et maintenance des infrastructures :
+                    </td>
+                    <td className="py-2 px-4 border-b">
+                      Assistance technique et maintenance des infrastructures
+                      informatiques.
+                    </td>
+                    <td className="py-2 px-4 border-b text-center">❌</td>
+                    <td className="py-2 px-4 border-b text-center">✔️</td>
+                  </tr>
                 </tbody>
               </table>
             </div>
           </div>
         </section>
       </div>
-
     </>
   );
 }
