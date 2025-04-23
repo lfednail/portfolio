@@ -12,7 +12,7 @@ export interface WorkItem {
   demoLink?: string;
   videoLink?: string;
   viewLink?: string;
-  lienLink?: string;
+  squareCode?: string;
   width?: number;
   height?: number;
   githubLink?: string;
@@ -38,7 +38,7 @@ export const workItems: WorkItem[] = [
     image: "/images/veille-techno.png",
     type: "veille-technologique",
     viewLink: "/pdf/Veille-techno.pdf",
-    lienLink: "",
+    squareCode: "/pdf/Ressources_Veille_Technologique.pdf",
   },
   {
     id: "3",
