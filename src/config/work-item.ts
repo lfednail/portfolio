@@ -57,7 +57,7 @@ export const workItems: WorkItem[] = [
     image: "/images/certificat-MOOC.png",
     type: "certification",
     viewLink: "/certificat-MOOC.pdf",
-    githubLink: "",
+    demoLink: "",
   },
   {
     id: "5",
@@ -95,7 +95,8 @@ export const workItems: WorkItem[] = [
     description: " Un PDF ma Certification de formation",
     image: "/images/certification.png",
     type: "certification",
-    viewLink: "",
+    viewLink: "/pdf/certification.pdf",
+    demoLink: "/certification.pptx",
   },
   {
     id: "9",
