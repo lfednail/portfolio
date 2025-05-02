@@ -117,5 +117,15 @@ export const workItems: WorkItem[] = [
     type: "internship",
     viewLink: "/pdf/Rapport_stage_Denain.pdf",
   },
+  {
+    id: "11",
+    title: "Tableau de Synthese E4",
+    description:
+      "Vous retrouverai ici mon tableau de synthese pour l'epreuve E4",
+    image: "/images/tableau-de-synthese.png",
+    type: "school_project",
+    viewLink:
+      "/pdf/Annexe 6-1 - Tableau de synthèse - Épreuve E4 - BTS SIO 2022",
+  },
   // Add more items as needed
 ];
