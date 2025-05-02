@@ -28,12 +28,14 @@ export function WorkCard({ item }: WorkCardProps) {
       />
       <CardHeader>
         <CardTitle>{item.title}</CardTitle>
-        <CardDescription>{item.type.replace("_", " ")}</CardDescription>
+        <CardDescription className="text-emerald-500">
+          {item.type.replace("_", " ")}
+        </CardDescription>
       </CardHeader>
       <CardContent>
         <p>{item.description}</p>
       </CardContent>
-      <CardFooter className="flex justify-between">
+      <CardFooter className="flex justify-between text-emerald-500">
         {item.demoLink && (
           <Button variant="outline" asChild>
             <a href={item.demoLink} target="_blank" rel="noopener noreferrer">
