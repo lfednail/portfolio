@@ -124,8 +124,7 @@ export const workItems: WorkItem[] = [
       "Vous retrouverai ici mon tableau de synthese pour l'epreuve E4",
     image: "/images/tableau-de-synthese.png",
     type: "school_project",
-    viewLink:
-      "/pdf/Annexe 6-1 - Tableau de synthèse - Épreuve E4 - BTS SIO 2022",
+    viewLink: "/pdf/Annexe6-1-Tableau_de_synthèse-ÉpreuveE4-BTSSIO2022.pdf",
   },
   // Add more items as needed
 ];
