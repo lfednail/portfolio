@@ -26,7 +26,7 @@ export const workItems: WorkItem[] = [
     description:
       "J'ai développé une application web pour le projet Nautilus Horizon. L'application a été construite en utilisant Next.js et Tailwind CSS, offrant une interface moderne, réactive et performante.",
     image: "/page-en-construction.png",
-    type: "school_project",
+    type: "personnal-project",
     demoLink: "https://example.com/demo/school-project",
     githubLink: "https://github.com/lfednail/marieteam-web-app.git",
   },
