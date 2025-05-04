@@ -2,6 +2,8 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
+![](/public/images/Macbook_Zentune_home.png)
+
 First, run the development server:
 
 ```bash
@@ -21,6 +23,8 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
 ## Learn More
+
+![](/public/images/Macbook_Zentune_home.png)
 
 To learn more about Next.js, take a look at the following resources:
 
