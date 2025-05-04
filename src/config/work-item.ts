@@ -44,7 +44,7 @@ export const workItems: WorkItem[] = [
     id: "3",
     title: "Personal Portfolio Website",
     description:
-      "Designed and developed a personal portfolio website using Next.js",
+      "Conception et développement d'un portfolio personnel entièrement responsive avec Next.js, mettant en avant mes projets, compétences et expériences professionnelles.",
     image: "/images/Personal-Portfolio-Website.png",
     type: "personnal-project",
     demoLink: "https://fednail-leclercq.vercel.app/",
@@ -81,9 +81,9 @@ export const workItems: WorkItem[] = [
   },
   {
     id: "7",
-    title: "(C.N.A.M.) Caisse Nationale d’Assurance Maladie",
+    title: "(C.N.A.M.) Caisse Nationale d'Assurance Maladie",
     description:
-      "Lors de mon stage à la Caisse Nationale d’Assurance Maladie, j'ai utilisé et appris à travailler avec VBA (Visual Basic for Applications). J'ai créé une macro Word permettant de partager automatiquement un document sur SharePoint, optimisant ainsi le processus de gestion et de partage de documents au sein de l'entreprise. ",
+      "Lors de mon stage à la Caisse Nationale d'Assurance Maladie, j'ai utilisé et appris à travailler avec VBA (Visual Basic for Applications). J'ai créé une macro Word permettant de partager automatiquement un document sur SharePoint, optimisant ainsi le processus de gestion et de partage de documents au sein de l'entreprise. ",
     image: "/images/stages/CNAM-removebg.png",
     type: "internship",
     viewLink: "/pdf/Presentation_de_stage.pdf",
@@ -121,7 +121,7 @@ export const workItems: WorkItem[] = [
     id: "11",
     title: "Tableau de Synthese E4",
     description:
-      "Vous retrouverai ici mon tableau de synthese pour l'epreuve E4",
+      "Accédez ici à mon tableau de synthèse E4, récapitulant l'ensemble de mes compétences, projets et missions réalisés dans le cadre du BTS SIO.",
     image: "/images/tableau-de-synthese.png",
     type: "school_project",
     viewLink: "/pdf/Annexe6-1-Tableau_de_synthèse-ÉpreuveE4-BTSSIO2022.pdf",

@@ -30,10 +30,11 @@ export default function Home() {
           text="Front-end Developer. "
         />
         <div className="mt-4 max-w-2xl text-gray-300 text-lg mb-8">
-          I&#39;m Fednail <span className="font-semibold">Leclercq</span>,
+          I&#39;m Fednail <span className="font-bold">Leclercq</span>,
           <p className="mt-2 text-gray-300">
-            A frontend developer, I design high-performance, intuitive web
-            applications using Next.js. After hours, I build my own projects .
+            Développeur frontend passionné par la performance et
+            l&apos;expérience utilisateur. Je crée des apps web fluides avec
+            Next.js le jour, et j&apos;explore des idées ambitieuses la nuit.
           </p>
         </div>
         <Button
@@ -46,8 +47,8 @@ export default function Home() {
             <Image
               src="/images/moi.png"
               alt="Fednail Leclercq"
-              width={50}
-              height={50}
+              width={40}
+              height={40}
               className="rounded-full object-cover"
             />
             About me
@@ -59,24 +60,24 @@ export default function Home() {
       <section className="py-20 px-6 bg-gradient-to-b from-purple-900 to-black">
         <div className="container mx-auto">
           <HyperText
-            className="text-3xl font-bold mb-12 text-center"
+            className="text-3xl font-bold mb-12 text-center "
             text="Featured Projects"
           />
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 mt-6 gap-8">
             {[
               {
-                title: "Project Nebula",
+                title: "Personal Portfolio Website",
                 description:
-                  "A cutting-edge web application showcasing advanced React patterns and state management techniques.",
-                image: "/images/project-Nebula.jpeg",
-                link: "#",
+                  "Conception et développement d'un portfolio personnel entièrement responsive avec Next.js, mettant en avant mes projets, compétences et expériences professionnelles.",
+                image: "/images/Personal-Portfolio-Website.png",
+                link: "https://fednail-leclercq.vercel.app/",
               },
               {
-                title: "CSS Constellation",
+                title: "Tableau de Synthese E4",
                 description:
-                  "An innovative CSS framework that pushes the boundaries of modern web design and layout capabilities.",
-                image: "/images/css-constellation-scorpio.jpeg",
-                link: "#",
+                  "Accédez ici à mon tableau de synthèse E4, récapitulant l'ensemble de mes compétences, projets et missions réalisés dans le cadre du BTS SIO.",
+                image: "/images/tableau-de-synthese.png",
+                link: "#/pdf/Annexe6-1-Tableau_de_synthèse-ÉpreuveE4-BTSSIO2022.pdf",
               },
             ].map((project, index) => (
               <Card key={index} className="bg-purple-800 ">
@@ -94,7 +95,7 @@ export default function Home() {
                     alt={project.title}
                     width={600}
                     height={300}
-                    className="rounded-lg object-cover w-full h-48"
+                    className="rounded-lg object-cover w-full h-64"
                   />
                 </CardContent>
                 <CardFooter>
@@ -108,7 +109,7 @@ export default function Home() {
           <div className="flex items-center justify-center gap-4  ">
             <Button
               asChild
-              className="mt-6 text-center items-center justify-center bg-gray-900 text-gray-300 gap-2"
+              className="mt-20 text-center items-center justify-center bg-purple-800 text-gray-300 gap-2"
             >
               <Link href="/fun-projects">Fun projects</Link>
             </Button>
@@ -132,7 +133,7 @@ export default function Home() {
                 href={"https://github.com/lfednail?tab=repositories"}
                 className="flex items-center gap-2"
               >
-                <button className="rounded-lg bg-purple-800 px-4 py-2 text-sm font-medium text-black transition hover:bg-purple-400 ">
+                <button className="rounded-lg bg-purple-800 px-4 py-2 text-sm font-medium text-gray-300 transition hover:bg-purple-400 ">
                   Let&#39;s go
                 </button>
                 <code className="rounded-lg bg-gray-700 px-4 py-2 text-sm font-mono text-gray-300">
