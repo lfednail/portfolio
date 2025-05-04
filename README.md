@@ -24,7 +24,7 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 
 ## Learn More
 
-![](/public/images/Mackup_website_phone.png)
+![](/public/images/Mockup_website_phone.png)
 
 To learn more about Next.js, take a look at the following resources:
 
