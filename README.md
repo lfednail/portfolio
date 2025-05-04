@@ -2,7 +2,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-![](/public/images/Mackup_website_mac.png)
+![](/public/images/mackup_website_mac.png)
 
 First, run the development server:
 
