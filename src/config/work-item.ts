@@ -56,7 +56,7 @@ export const workItems: WorkItem[] = [
     description: 'Certification de l"ANSSI en mooc',
     image: "/images/certificat-MOOC.png",
     type: "certification",
-    viewLink: "/certificat-MOOC.pdf",
+    viewLink: "/pdf/certificat-MOOC.pdf",
     demoLink: "",
   },
   {
