@@ -77,7 +77,7 @@ export default function Home() {
                 description:
                   "Accédez ici à mon tableau de synthèse E4, récapitulant l'ensemble de mes compétences, projets et missions réalisés dans le cadre du BTS SIO.",
                 image: "/images/tableau-de-synthese.png",
-                link: "#/pdf/Annexe6-1-Tableau_de_synthèse-ÉpreuveE4-BTSSIO2022.pdf",
+                link: "/pdf/Annexe6-1-Tableau_de_synthèse-ÉpreuveE4-BTSSIO2022.pdf",
               },
             ].map((project, index) => (
               <Card key={index} className="bg-purple-800 ">
