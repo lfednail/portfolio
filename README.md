@@ -2,7 +2,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-![](/public/images/Macbook_Zentune_home.png)
+![](/public/images/mockup_website_mac.png)
 
 First, run the development server:
 
@@ -24,7 +24,7 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 
 ## Learn More
 
-![](/public/images/Macbook_Zentune_home.png)
+![](/public/images/Mockup_website_phone.png)
 
 To learn more about Next.js, take a look at the following resources:
 
