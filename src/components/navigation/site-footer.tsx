@@ -1,63 +1,51 @@
 import Link from "next/link"
 import React from "react";
 import Image from "next/image";
-import {ModeToggle} from "@/components/theme-toggle";
+import {SwitchToggle} from "@/components/switch-toggle";
 
 
-const Socials = [
-  {
-    name: "LinkedIn",
-    href: "https://www.linkedin.com/in/fednail-leclercq-734333250/",
-  },
-  {
-    name: "GitHub",
-    href: "https://github.com/lfednail",
-  },
-  {
-    name: "Instagram",
-    href: "https://www.instagram.com/sukig.dev/",
-  },
-];
+
 
 export default function SiteFooter() {
   return (
       <>
-        <footer className="border-t py-6 flex items-center">
-          <div className={"container flex max-md:flex-col max-md:gap-2 items-center justify-between text-sm"}>
-            <section>
+        <footer className="bg-background text-foreground mt-20 flex flex-col items-center sm:justify-between sm:p-12">
+          <div className="w-full flex justify-between sm:gap-12">
+            <div className="w-full">
+              <p className="font-sans capitalize text-[9vw] sm:text-[3.5vw] leading-none">stay in touch.</p>
+            </div>
 
-              <div className={"ml-4 flex flex-col items-center gap-4"}>
-                {Socials.map((social) => (
-                  <Link
-                    key={social.name}
-                    href={social.href}
-                    className={"text-muted-foreground"}
-                  >
-                    <p>{social.name}</p>
-                  </Link>
-                ))}
-              </div><br/>
-
-            </section>
-            <section>
-              <p className={"text-muted-foreground"}>
-                © {new Date().getFullYear()} Fednail / Sukig.dew Inc. All rights reserved
-              </p>
-            </section>
-
-            <section>
-              <ModeToggle/>
+            <div className="flex flex-col items-center">
               <Image
-                src="/images/icon-fed-removebg.png" // Chemin relatif dans le dossier public
-                alt=" Logo nom dev"
-                width={50} // Spécifiez la largeur
-                height={50} // Spécifiez la hauteur
-                className="rounded-full" // Ajoutez des styles, par exemple pour des bordures rondes
+                  src="/images/moi.png" // Chemin relatif dans le dossier public
+                  alt=" Logo nom dev"
+                  width={300} // Spécifiez la largeur
+                  height={300} // Spécifiez la hauteur
+                  className="rounded-full" // Ajoutez des styles, par exemple pour des bordures rondes
               />
+            </div>
 
-            </section>
+            <div className="w-full my-4 sm:my-6">
+              <div className="w-full flex justify-between uppercase gap-2">
+                <Link className="font-thin" target="_blank" href="mailto:sukig.dew@gmail.com">Sukig.dew@gmail.com</Link>
+                <Link className="font-thin" target="_blank" href="https://github.com/lfednail">Github</Link>
+                <Link className="font-thin" target="_blank" href="https://www.instagram.com/sukig.dev/">Instagram</Link>
+                <Link className="font-thin" target="_blank" href="https://www.linkedin.com/in/fednail-leclercq-734333250/">linkedin</Link>
+              </div>
+            </div>
+          </div>
+          <SwitchToggle/>
+          <div className="flex flex-col gap-1 items-end">
+            <p>
+              <span className="font-mono mr-1 text-[0.7rem]">© 2025</span>
+              <span className="font-sans text-[0.85rem]">Sukig.Dew</span>
+            </p>
           </div>
 
+          <div className="flex flex-col gap-1 uppercase text-right text-[0.45rem] sm:text-[0.6rem]">
+            <p>designed and developed by Sukig.Dew.</p>
+            <p>For the love of lovelace, embrace poetical science.</p>
+          </div>
         </footer>
       </>
   );
