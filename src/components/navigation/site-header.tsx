@@ -1,33 +1,29 @@
 'use client';
 
 import React, {useState} from 'react';
-import {Timer} from "@/components/navigation/timer";
+
 import Link from "next/link";
 import {SwitchToggle} from "@/components/switch-toggle";
+import SiteNavbar from "@/components/navigation/site-navbar";
 
 export default function SiteHeader() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <>
-      <header className="h-14 flex items-center border-b">
+      <header className="flex justify-between items-center px-6 py-4  sticky top-0 z-50">
         <div className="container max-w-screen-4xl flex items-center justify-between">
           {/* Logo or Home Link */}
           <div>
-            <Link href="/" className="font-bold">Europe / France</Link>
+            <Link href="/" className="text-2xl font-bold" >
+              Sukig<span className="text-blue-600">.Dew</span> </Link>
           </div>
 
           {/* Navigation for large screens */}
           <nav className="hidden md:flex items-center font-bold gap-6">
-            <Link href="/">Home</Link>
-            <Link href="/about">About Me</Link>
-            <Link href="/education">Education</Link>
-            <Link href="/work">Work</Link>
-            <Link href="/fun-projects">Fun Projects</Link>
+            <SiteNavbar/>
             <SwitchToggle/>
           </nav>
 
-          {/* Timer or other content */}
-          <Timer/>
 
 
 
