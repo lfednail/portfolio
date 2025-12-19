@@ -3,6 +3,7 @@ import "./globals.css";
 import {ThemeProvider} from "next-themes";
 import SiteHeader from "@/components/navigation/site-header";
 import SiteFooter from "@/components/navigation/site-footer";
+import {Analytics} from "@vercel/analytics/next";
 import React from "react";
 
 
@@ -45,6 +46,7 @@ export default function RootLayout({
 
         <SiteFooter/>
       </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );
