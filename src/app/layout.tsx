@@ -4,6 +4,7 @@ import {ThemeProvider} from "next-themes";
 import SiteHeader from "@/components/navigation/site-header";
 import SiteFooter from "@/components/navigation/site-footer";
 import React from "react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 
 
@@ -42,7 +43,7 @@ export default function RootLayout({
       >
         <SiteHeader/>
         {children}
-
+        <SpeedInsights />
         <SiteFooter/>
       </ThemeProvider>
       </body>
