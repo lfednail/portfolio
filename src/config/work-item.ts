@@ -126,5 +126,13 @@ export const workItems: WorkItem[] = [
     type: "school_project",
     viewLink: "/pdf/Annexe6-1-Tableau_de_synthèse-ÉpreuveE4-BTSSIO2022.pdf",
   },
+  {
+    id: "12",
+    title: "Polyclinique Vauban - ELSAN (Hôpitaux privés du Hainaut)",
+    description:" Lors de se stage j'avais pour mission de créer un nouveau planning pour les membres de l'équipe informatique. Afin de mieux visualier sur quelle cliniques il seront placer cette semaine. ",
+    image: "/images/stages/elsan-logo.png",
+    type: "internship",
+    viewLink: "/pdf/Rapport_de_stage_hôpital_privé_hainaux.pdf"
+  }
   // Add more items as needed
 ];

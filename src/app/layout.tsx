@@ -1,12 +1,14 @@
 import localFont from "next/font/local";
 import "./globals.css";
-import {ThemeProvider} from "next-themes";
+import { ThemeProvider } from "next-themes";
 import SiteHeader from "@/components/navigation/site-header";
 import SiteFooter from "@/components/navigation/site-footer";
 import React from "react";
 import { SpeedInsights } from '@vercel/speed-insights/next';
 
 
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/next";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -20,9 +22,10 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: 'Fednail-LL - Portfolio',
-  description: 'Portfolio de FEDNAIL LECLERCQ -  Développeur informatique, je suis un développeur web et mobile, j\'aime le développement web, le développement mobile et le développement de jeux vidéo.',
-}
+  title: "Fednail-LL - Portfolio",
+  description:
+    "Portfolio de FEDNAIL LECLERCQ -  Développeur informatique, je suis un développeur web et mobile, j'aime le développement web, le développement mobile et le développement de jeux vidéo.",
+};
 
 export default function RootLayout({
   children,
@@ -34,8 +37,8 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-
-      <ThemeProvider
+        <SpeedInsights />
+        <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
@@ -47,6 +50,13 @@ export default function RootLayout({
         <SiteFooter/>
       </ThemeProvider>
       <SpeedInsights />
+        >
+          <SiteHeader />
+          {children}
+          <Analytics />
+          <SpeedInsights />
+          <SiteFooter />
+        </ThemeProvider>
       </body>
     </html>
   );

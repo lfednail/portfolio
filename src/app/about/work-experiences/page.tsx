@@ -38,20 +38,38 @@ export default function WorkExperience() {
       <div>
         <div>
           <div className="flex justify-between items-baseline mb-1">
+            <h2 className="text-2xl font-semibold">Polyclinique Vauban - ELSAN (Hôpitaux privés du Hainaut)</h2>
+            <span className="text-muted-foreground">JEV 2026 - FEV. 2026</span>
+          </div>
+          <p className="text-emerald-500 mb-4">Stagiaire Développeur Fullstack</p>
+          <ul className="list-disc list-inside text-muted-foreground">
+            <li>
+              Conception d&#39;une application web de gestion de plannings multi-sites.
+            </li>
+            <li>
+              Développement API REST (Node.js/Express) + Frontend (Next.js, React, TailwindCSS).
+            </li>
+            <li>Modélisation BDD MySQL et sécurisation JWT/BCrypt.</li>
+            <li>Déploiement production (PM2, serveur interne).</li>
+          </ul>
+        </div>
+        <br/>
+        <div>
+          <div className="flex justify-between items-baseline mb-1">
             <h2 className="text-2xl font-semibold">Mairie de Denain</h2>
-            <span className="text-muted-foreground">Fév 2024 - Avr. 2024</span>
+            <span className="text-muted-foreground">FEV 2025 - AVR. 2025</span>
           </div>
           <p className="text-emerald-500 mb-4">Stagiaire Développeur</p>
           <ul className="list-disc list-inside text-muted-foreground">
-            <li>Administration de l&apos;intranet municipal sous WordPress</li>
+            <li>Administration de l&apos;intranet municipal sous WordPress.</li>
             <li>
               Implémentation de stratégies de sécurité (Active Directory, GPO,
-              mode kiosque)
+              mode kiosque).
             </li>
-            <li>Support IT (matériel, logiciel, réseau, téléphonie)</li>
+            <li>Support IT (matériel, logiciel, réseau, téléphonie).</li>
           </ul>
         </div>
-
+        <br/>
         <div>
           <div className="flex justify-between items-baseline mb-1">
             <h2 className="text-2xl font-semibold">
@@ -61,11 +79,11 @@ export default function WorkExperience() {
           </div>
           <p className="text-emerald-500 mb-4">Développeur WordPress (Stage)</p>
           <ul className="list-disc list-inside text-muted-foreground">
-            <li>Intégration de l&#39;authentification SAML sur WordPress</li>
-            <li>Sécurisation des accès utilisateurs</li>
+            <li>Intégration de l&#39;authentification SAML sur WordPress.</li>
+            <li>Sécurisation des accès utilisateurs.</li>
           </ul>
         </div>
-
+        <br/>
         <div>
           <div className="flex justify-between items-baseline mb-1">
             <h2 className="text-2xl font-semibold">
@@ -75,8 +93,8 @@ export default function WorkExperience() {
           </div>
           <p className="text-emerald-500 mb-4">Développeur VBA (Stage)</p>
           <ul className="list-disc list-inside text-muted-foreground">
-            <li>Développement de macros Excel en VBA </li>
-            <li>Automatisation des tâches administratives répétitives</li>
+            <li>Développement de macros Excel en VBA.</li>
+            <li>Automatisation des tâches administratives répétitives.</li>
           </ul>
         </div>
       </div>
