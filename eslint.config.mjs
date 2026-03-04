@@ -1,13 +1,10 @@
-import next from "eslint-config-next";
+import nextConfig from "eslint-config-next";
 
 const config = [
   {
-    ignores: [".next", "node_modules", "public", "out", "**/*.js"],
+    ignores: [".next", "node_modules", "public", "out"],
   },
-  ...next({
-    typescript: true,
-    appDir: true,
-  }),
+  ...Object.values(nextConfig),
 ];
 
 export default config;

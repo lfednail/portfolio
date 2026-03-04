@@ -4,8 +4,7 @@ import {useEffect, useState} from "react";
 
 export function Timer() {
   const [currentTime, setCurrentTime] = useState<string>("");
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [location, setLocation] = useState<string>("Loading...");
+  const [location, setLocation] = useState<string>("Euro / France");
 
   // Update the time every second
   useEffect(() => {
@@ -20,11 +19,6 @@ export function Timer() {
     }, 1000);
 
     return () => clearInterval(interval);
-  }, []);
-
-  // Simuler l'obtention de l'emplacement
-  useEffect(() => {
-    setLocation("Euro / France"); // Replace with your dynamic logic
   }, []);
 
   return (

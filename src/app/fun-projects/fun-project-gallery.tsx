@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect, useRef, useCallback } from 'react'
 import Image from 'next/image'
 import { FunProject, funProjects } from '@/config/fun-project'
 import { FunProjectModal } from './fun-project-modal'
@@ -17,6 +17,15 @@ export function FunProjectGallery({ initialProjects, totalProjects }: FunProject
   const loaderRef = useRef(null)
 
   const columnCount = Math.min(5, Math.max(2, Math.floor(totalProjects / 10)))
+
+  const loadMoreProjects = useCallback(() => {
+    setLoading(true)
+    setTimeout(() => {
+      const nextProjects = funProjects.slice(projects.length, projects.length + 12)
+      setProjects((prevProjects) => [...prevProjects, ...nextProjects])
+      setLoading(false)
+    }, 500) // Simulating network delay
+  }, [projects.length])
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -39,16 +48,7 @@ export function FunProjectGallery({ initialProjects, totalProjects }: FunProject
         observer.unobserve(currentLoaderRef)
       }
     }
-  }, [projects, totalProjects])
-
-  const loadMoreProjects = () => {
-    setLoading(true)
-    setTimeout(() => {
-      const nextProjects = funProjects.slice(projects.length, projects.length + 12)
-      setProjects((prevProjects) => [...prevProjects, ...nextProjects])
-      setLoading(false)
-    }, 500) // Simulating network delay
-  }
+  }, [projects, totalProjects, loadMoreProjects])
 
   return (
     <>
@@ -85,4 +85,3 @@ export function FunProjectGallery({ initialProjects, totalProjects }: FunProject
     </>
   )
 }
-
