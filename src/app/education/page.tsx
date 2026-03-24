@@ -56,7 +56,7 @@ export default function EducationPage() {
               Les Spécialités du BTS SIO
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="bg-white p-6 rounded-lg shadow-lg text-black dark:bg-gray-800 dark:text-gray-200">
+              <div className="bg-white p-6 rounded-lg shadow-lg text-black">
                 <Image
                   alt="Image illustrative de la spécialité SLAM avec des étudiants codant sur des ordinateurs"
                   className="w-full h-48 object-cover rounded-t-lg mb-4"
@@ -64,7 +64,7 @@ export default function EducationPage() {
                   src="https://storage.googleapis.com/a1aa/image/ashyUvV9yRLcL1eMKzWxAal0nnCgyTCq658JrQQ51RL0u6fTA.jpg"
                   width={400}
                 />
-                <h3 className="text-2xl font-bold mb-2 text-emerald-700 dark:text-emerald-500">
+                <h3 className="text-2xl font-bold mb-2 text-emerald-700">
                   SLAM (Solutions Logicielles et Applications Métiers)
                 </h3>
                 <p>
@@ -72,7 +72,7 @@ export default function EducationPage() {
                   concevoir, réaliser et maintenir des solutions logicielles.
                 </p>
               </div>
-              <div className="bg-white p-6 rounded-lg shadow-lg text-black dark:bg-gray-800 dark:text-gray-200">
+              <div className="bg-white p-6 rounded-lg shadow-lg text-black">
                 <Image
                   alt="Image illustrative de la spécialité SISR avec des étudiants travaillant sur des réseaux informatiques"
                   className="w-full h-48 object-cover rounded-t-lg mb-4"
@@ -80,7 +80,7 @@ export default function EducationPage() {
                   src="https://storage.googleapis.com/a1aa/image/LwgEvr7RrWaxA9a3T9Enx6hUF44fLyxZkza7rfXZO6Fmd1fnA.jpg"
                   width={400}
                 />
-                <h3 className="text-2xl font-bold mb-2 text-emerald-700 dark:text-emerald-500">
+                <h3 className="text-2xl font-bold mb-2 text-emerald-700">
                   SISR (Solutions d&apos;Infrastructure, Systèmes et Réseaux)
                 </h3>
                 <p>
@@ -218,8 +218,8 @@ export default function EducationPage() {
               Le Tableau de Synthèse
             </h2>
             <div className="overflow-x-auto">
-              <table className="min-w-full bg-white rounded-lg shadow-lg text-black dark:bg-gray-800 dark:text-gray-200">
-                <thead className="bg-emerald-500 text-white dark:bg-emerald-700">
+              <table className="min-w-full bg-white rounded-lg shadow-lg text-black">
+                <thead className="bg-emerald-500 text-white">
                   <tr>
                     <th className="py-2 px-4 border-b">Compétence</th>
                     <th className="py-3 px-4 border-b">Description</th>

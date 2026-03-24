@@ -37,7 +37,6 @@ export default function Home() {
 
     ctx.clearRect(0, 0, width, height);
 
-    // Utilisation de la variable CSS pour supporter dark/light mode
     const pixelColor =
       getComputedStyle(document.documentElement)
         .getPropertyValue("--color-pixel")

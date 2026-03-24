@@ -1,10 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
-import { SwitchToggle } from "@/components/switch-toggle";
 
 export default function SiteFooter() {
   const currentYear = new Date().getFullYear();
-  
+
   const socialLinks = [
     {
       label: "Email",
@@ -27,7 +26,7 @@ export default function SiteFooter() {
       text: "LinkedIn",
     },
   ];
-  
+
   return (
     <footer className="bg-background text-foreground mt-20 flex flex-col items-center sm:justify-between sm:p-12">
       {/* Section principale : titre + photo + liens */}
@@ -37,7 +36,7 @@ export default function SiteFooter() {
             stay in touch.
           </p>
         </div>
-        
+
         <div className="flex flex-col items-center my-6 sm:my-0">
           <Image
             src="/images/moi.png"
@@ -48,7 +47,7 @@ export default function SiteFooter() {
             priority={false}
           />
         </div>
-        
+
         <div className="w-full my-4 sm:my-6">
           <nav aria-label="Liens sociaux">
             <ul className="w-full flex flex-wrap justify-between uppercase gap-2">
@@ -69,25 +68,21 @@ export default function SiteFooter() {
           </nav>
         </div>
       </div>
-      
+
       {/* Séparateur visuel + Toggle thème */}
-      <div className="w-full my-6 border-t border-border pt-4 flex justify-center">
-        <SwitchToggle />
-      </div>
-      
+      <div className="w-full my-6 border-t border-border pt-4 flex justify-center"></div>
+
       {/* Copyright - CENTRÉ */}
       <div className="flex flex-col gap-1 items-center w-full">
         <p className="text-foreground/80 text-center">
-          <span className="font-mono mr-1 text-[0.7rem]">
-            © {currentYear}
-          </span>
-          <span className="font-sans text-[0.85rem]">Sukig.Dew</span>
+          <span className="font-mono mr-1 text-[0.7rem]">© {currentYear}</span>
+          <span className="font-sans text-[0.85rem]">Fednail L.</span>
         </p>
       </div>
-      
+
       {/* Crédits - CENTRÉS */}
       <div className="flex flex-col gap-1 uppercase text-center text-[0.45rem] sm:text-[0.6rem] text-foreground/60">
-        <p>designed and developed by Sukig.Dew.</p>
+        <p>designed and developed by Fednail L.</p>
         <p>For the love of lovelace, embrace poetical science.</p>
       </div>
     </footer>

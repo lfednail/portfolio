@@ -1,6 +1,5 @@
 import localFont from "next/font/local";
 import "./globals.css";
-import { ThemeProvider } from "@/components/theme-provider";
 import SiteHeader from "@/components/navigation/site-header";
 import SiteFooter from "@/components/navigation/site-footer";
 
@@ -30,21 +29,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-        suppressHydrationWarning
       >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <SiteHeader />
-          <main>{children}</main>
-          <SiteFooter />
-        </ThemeProvider>
+        <SiteHeader />
+        <main>{children}</main>
+        <SiteFooter />
       </body>
     </html>
   );
