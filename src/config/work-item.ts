@@ -12,6 +12,7 @@ export interface WorkItem {
   demoLink?: string;
   videoLink?: string;
   viewLink?: string;
+  viewIcon?: string;
   squareCode?: string;
   width?: number;
   height?: number;
@@ -77,7 +78,7 @@ export const workItems: WorkItem[] = [
     image: "/glpi.png",
     type: "school_project",
     viewLink: "/pdf/Installer-GLPI-10-sous_Debian-12.pdf",
-    demoLink: "",
+    viewIcon: "public/pdf/compte_rendu_glpi.pdf",
   },
   {
     id: "7",
@@ -88,7 +89,6 @@ export const workItems: WorkItem[] = [
     type: "internship",
     viewLink: "/pdf/Presentation_de_stage.pdf",
   },
-
   {
     id: "8",
     title: "Certification de formation",
@@ -129,10 +129,11 @@ export const workItems: WorkItem[] = [
   {
     id: "12",
     title: "Polyclinique Vauban - ELSAN (Hôpitaux privés du Hainaut)",
-    description:" Lors de se stage j'avais pour mission de créer un nouveau planning pour les membres de l'équipe informatique. Afin de mieux visualier sur quelle cliniques il seront placer cette semaine. ",
+    description:
+      " Lors de se stage j'avais pour mission de créer un nouveau planning pour les membres de l'équipe informatique. Afin de mieux visualier sur quelle cliniques il seront placer cette semaine. ",
     image: "/images/stages/elsan-logo.png",
     type: "internship",
-    viewLink: "/pdf/Rapport_de_stage_hôpital_privé_hainaux.pdf"
-  }
+    viewLink: "/pdf/Rapport_de_stage_hôpital_privé_hainaux.pdf",
+  },
   // Add more items as needed
 ];

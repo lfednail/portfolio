@@ -8,7 +8,14 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Github, Video, Eye, SquareCode } from "lucide-react";
+import {
+  ExternalLink,
+  Github,
+  Video,
+  Eye,
+  SquareCode,
+  ViewIcon,
+} from "lucide-react";
 import { WorkItem } from "@/config/work-item";
 import QrCodeModal from "./qr-code-modal";
 
@@ -56,6 +63,14 @@ export function WorkCard({ item }: WorkCardProps) {
           <Button variant="outline" asChild>
             <a href={item.viewLink} target="_blank" rel="noopener noreferrer">
               <Eye className="mr-2 h-4 w-4" />
+              View
+            </a>
+          </Button>
+        )}
+        {item.viewIcon && (
+          <Button variant="outline" asChild>
+            <a href={item.viewLink} target="_blank" rel="noopener noreferrer">
+              <ViewIcon className="mr-2 h-4 w-4" />
               View
             </a>
           </Button>
