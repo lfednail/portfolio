@@ -19,9 +19,11 @@ const Navbar = () => {
         <li className="hover:text-yellow-500">
           <Link href="/work">Work</Link>
         </li>
-        <li className="hover:text-red-500">
-          <Link href="/fun-projects">Fun Projects</Link>
-        </li>
+        {/*
+          <li className="hover:text-red-500">
+            <Link href="/fun-projects">Fun Projects</Link>
+          </li>
+        */}
       </ul>
     </nav>
   );
