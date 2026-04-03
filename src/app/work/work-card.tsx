@@ -69,7 +69,7 @@ export function WorkCard({ item }: WorkCardProps) {
         )}
         {item.viewIcon && (
           <Button variant="outline" asChild>
-            <a href={item.viewLink} target="_blank" rel="noopener noreferrer">
+            <a href={item.viewIcon} target="_blank" rel="noopener noreferrer">
               <ViewIcon className="mr-2 h-4 w-4" />
               View
             </a>

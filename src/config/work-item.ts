@@ -78,7 +78,7 @@ export const workItems: WorkItem[] = [
     image: "/glpi.png",
     type: "school_project",
     viewLink: "/pdf/Installer-GLPI-10-sous_Debian-12.pdf",
-    viewIcon: "public/pdf/compte_rendu_glpi.pdf",
+    viewIcon: "/pdf/compte_rendu_glpi.pdf",
   },
   {
     id: "7",
@@ -134,6 +134,16 @@ export const workItems: WorkItem[] = [
     image: "/images/stages/elsan-logo.png",
     type: "internship",
     viewLink: "/pdf/Rapport_de_stage_hôpital_privé_hainaux.pdf",
+  },
+  {
+    id: "13",
+    title: "Application web de gestion des interventions",
+    description:
+      "Conception et développement d’application web de Gestion des interventions nommé CashCash. CASHCASH est une application web professionnelle de gestion de maintenance et d'interventions techniques, conçue pour répondre aux exigences des entreprises de services numériques (ESN).",
+    image: "/images/dashTech.png",
+    type: "school_project",
+    githubLink: "https://github.com/lfednail/Vrai_CashCash_App",
+    viewLink: "/pdf/Application_Gestion_CashCash.pdf",
   },
   // Add more items as needed
 ];
