@@ -148,7 +148,7 @@ export const workItems: WorkItem[] = [
   },
   {
     id: "14",
-    title: "Veille Technologique Expo & Expo go.",
+    title: "Veille Technologique Expo & Expo go",
     description:
       "Cette veille technologique a pour objectif d’analyser le framework Expo et l’application Expo Go dans l’écosystème React Native, afin de comprendre leur fonctionnement, leurs avantages, leurs limites et leur utilité dans le développement d’applications mobiles.",
     image: "/images/expo.png",
