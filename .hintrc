@@ -5,7 +5,14 @@
   "connector": {
     "name": "local",
     "options": {
-      "pattern": ["**", "!.next/**", "!node_modules/**"]
+      "pattern": [
+        "**",
+        "!.next/**",
+        "!node_modules/**"
+      ]
     }
+  },
+  "hints": {
+    "no-inline-styles": "off"
   }
 }

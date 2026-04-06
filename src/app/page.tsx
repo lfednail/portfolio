@@ -87,14 +87,14 @@ export default function Home() {
       description:
         "Accédez ici à mon tableau de synthèse E4, récapitulant l'ensemble de mes compétences, projets et missions réalisés dans le cadre du BTS SIO.",
       image: "/images/tableau-de-synthese.png",
-      link: "/pdf/Annexe6-1-Tableau_de_synthèse-ÉpreuveE4-BTSSIO2022.pdf",
+      link: "/pdf/Annexe 6-1 - Tableau de synthèse - Épreuve E4 - BTS SIO 2022.pdf",
     },
   ];
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-between p-8 sm:p-16 md:p-24 bg-background text-foreground">
       {/* Main Content */}
-      <main className="flex flex-col items-center justify-center flex-grow w-full max-w-7xl mx-auto">
+      <main className="flex flex-col items-center justify-center grow w-full max-w-7xl mx-auto">
         {/* Hero Section */}
         <div className="relative w-full text-center">
           <h1 className="text-7xl sm:text-8xl md:text-[10rem] font-black leading-none mb-6">
@@ -102,10 +102,10 @@ export default function Home() {
           </h1>
 
           {/* Canvas pour le mot "ENGINEER" */}
-          <div className="relative mt-6 w-full max-w-[800px] mx-auto">
+          <div className="relative mt-6 w-full max-w-200 mx-auto">
             <canvas
               ref={canvasRef}
-              className="w-full h-[100px] sm:h-[150px] mx-auto"
+              className="w-full h-25 sm:h-37.5 mx-auto"
               style={{ imageRendering: "pixelated" }}
               aria-label="Animation pixel art du mot ENGINEER"
               role="img"
@@ -141,7 +141,7 @@ export default function Home() {
                     <CardTitle className="text-2xl font-bold text-card-foreground">
                       {project.title}
                     </CardTitle>
-                    <CardDescription className="text-muted-foreground mt-2 flex-grow">
+                    <CardDescription className="text-muted-foreground mt-2 grow">
                       {project.description}
                     </CardDescription>
                   </CardHeader>
