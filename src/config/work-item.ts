@@ -23,11 +23,11 @@ export interface WorkItem {
 export const workItems: WorkItem[] = [
   {
     id: "1",
-    title: "Nautilus Horizon (Page en construction)",
+    title: "Marie Team ",
     description:
-      "J'ai développé une application web pour le projet Nautilus Horizon. L'application a été construite en utilisant Next.js et Tailwind CSS, offrant une interface moderne, réactive et performante.",
-    image: "/page-en-construction.png",
-    type: "personnal-project",
+      "MarieTeam est une entreprise fictive de transport maritime, dans le cadre d'un atelier professionnel de BTS SIO SLAM. L'objectif de la compagnie est d'assurer des liaisons maritimes entre le continent et des îles",
+    image: "/MarieTeam_web_app.png",
+    type: "school_project",
     demoLink: "https://example.com/demo/school-project",
     githubLink: "https://github.com/lfednail/marieteam-web-app.git",
   },
@@ -124,7 +124,8 @@ export const workItems: WorkItem[] = [
       "Accédez ici à mon tableau de synthèse E4, récapitulant l'ensemble de mes compétences, projets et missions réalisés dans le cadre du BTS SIO.",
     image: "/images/tableau-de-synthese.png",
     type: "school_project",
-    viewLink: "/pdf/Annexe6-1-Tableau_de_synthèse-ÉpreuveE4-BTSSIO2022.pdf",
+    viewLink:
+      "/pdf/Annexe 6-1 - Tableau de synthèse - Épreuve E4 - BTS SIO 2022.pdf",
   },
   {
     id: "12",
@@ -144,6 +145,15 @@ export const workItems: WorkItem[] = [
     type: "school_project",
     githubLink: "https://github.com/lfednail/Vrai_CashCash_App",
     viewLink: "/pdf/Application_Gestion_CashCash.pdf",
+  },
+  {
+    id: "14",
+    title: "Veille Technologique Expo & Expo go.",
+    description:
+      "Cette veille technologique a pour objectif d’analyser le framework Expo et l’application Expo Go dans l’écosystème React Native, afin de comprendre leur fonctionnement, leurs avantages, leurs limites et leur utilité dans le développement d’applications mobiles.",
+    image: "/images/expo.png",
+    type: "veille-technologique",
+    viewLink: "/pdf/Veille Technologique Expo.pdf",
   },
   // Add more items as needed
 ];
